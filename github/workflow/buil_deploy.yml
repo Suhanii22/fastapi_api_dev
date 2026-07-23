@@ -1,0 +1,11 @@
+
+
+name: Build and Deploy Code
+
+#  triggers
+on: [push , pull_request]
+
+jobs:
+  job1:
+    runs-on: 
+

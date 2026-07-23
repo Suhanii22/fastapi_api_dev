@@ -23,6 +23,9 @@ services:
         - ACCESS_TOKEN_EXPIRE_MINUTES=${ACCESS_TOKEN_EXPIRE_MINUTES}
     postgres:
       image: postgres:17
+      # for seeing our data in db coz our db is now pgadmin image 
+      # ports:
+      #   - "5432:5432"
       environment:
         - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
         - POSTGRES_DB=${DATABASE_NAME}
