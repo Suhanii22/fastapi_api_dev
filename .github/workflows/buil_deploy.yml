@@ -32,6 +32,13 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: "3.13"
+
+      - name: Print variables
+        run: |
+           echo $DATABASE_HOSTNAME
+           echo $DATABASE_PORT
+           echo $DATABASE_USERNAME
+           echo $DATABASE_NAME     
       - name: update pip
         run: python -m pip install --upgrade pip 
       - name: install all dependencies
